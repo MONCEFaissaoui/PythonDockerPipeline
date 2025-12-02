@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Récupérer le code depuis GitHub
-                git branch: 'master', url: 'https://github.com/MONCEFaissaoui/PythonDockerPipeline.git'
+                git branch: 'main', url: 'https://github.com/MONCEFaissaoui/PythonDockerPipeline.git'
             }
         }
         stage('Build Docker Image') {
